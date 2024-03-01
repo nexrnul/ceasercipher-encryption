@@ -17,3 +17,69 @@ def encode(character):
 def decode(binary):
     charIndex = int(binary, 2)
     return characters[charIndex]
+
+
+
+msg = input("Enter message:")
+shift = input("Enter a shift:")
+
+def CsrLetters(msg, letter): 
+    #for i in range (len(characters)):   
+    for char in msg:
+        return(characters.index(msg[:1]))
+     
+
+
+
+
+
+#def Csr(letter, shift):
+ #       csrmsg = " "
+  #  if shift == 0:
+   #     print ("nothing to shift")
+    #else:
+     #   for i in range(shift):
+      #      shift += key
+
+       # genKey += key[0:remainder]
+
+        #return genKey
+
+
+
+
+
+
+
+
+
+#def CsrLetter(letter, keyLetter):
+#   letterBin = encode(letter)
+ #   encryptedLetter = XORonByte(letterBin, keyLetterBin)
+  #  return decode(encryptedLetter)
+
+
+#def CsrSentence(sentence, key):
+    
+ #   encryptedSentence = ""
+  #  genKey = generateKey(sentence, key)
+   # for i in range (len(sentence)):
+        
+    #    encryptedSentence += XORonLetter(sentence[i], genKey[i])
+
+
+
+
+#def shiftchar(characters):
+    #for i in range(len(characters)):
+
+    #return shift[+= ]
+
+
+
+
+
+
+
+
+#print("Your encrypted message is:", XORonSentence(msg, shift))

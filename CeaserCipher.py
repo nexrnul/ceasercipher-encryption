@@ -9,26 +9,32 @@ characters = [
 ]
 
 # use this method to encode an alphabet character into a binary string
-def encode(character):
-    charIndex = characters.index(character)
-    return '{0:06b}'.format(charIndex)
+#def encode(character):
+    #charIndex = characters.index(character)
+    #return '{0:06b}'.format(charIndex)
 
 # use this method to decode a binary string into an alphabet character
-def decode(binary):
-    charIndex = int(binary, 2)
-    return characters[charIndex]
+#def decode(binary):
+ #   charIndex = int(binary, 2)
+  #  return characters[charIndex]
 
 
 
 msg = input("Enter message:")
-shift = input("Enter a shift:")
+#shift = input("Enter a shift:")
 
-def CsrLetters(msg, letter): 
+def CsrCphr(msg, letter): 
     #for i in range (len(characters)):   
-    for char in msg:
-        return(characters.index(msg[:1]))
-     
+    for char in msg: 
+        search= iter(msg) 
+        return(nexChar == (next(search)))
 
+        alpha= characters.index(nexChar)
+        #return(characters.index(msg[0:]))
+        #characters.index = letter
+print()
+
+#print(CsrCphr)
 
 
 

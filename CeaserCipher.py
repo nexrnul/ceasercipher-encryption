@@ -1,4 +1,3 @@
-import math
 characters = [
     # lowercase characters
 'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z',
@@ -26,15 +25,19 @@ msg = input("Enter message:")
 def CsrCphr(msg, letter): 
     #for i in range (len(characters)):   
     for char in msg: 
-        search= iter(msg) 
-        return(nexChar == (next(search)))
+        #letter= iter(msg) 
+        letter= characters.index(char)
+        
+        return letter
 
-        alpha= characters.index(nexChar)
+        #nexChar= (next(letter))
+        #alphabet= characters.index(letter)
+        #return(next(letter))
+        #return(nexChar == (next(search)))
         #return(characters.index(msg[0:]))
-        #characters.index = letter
-print()
+        #characters.index = letter 
 
-#print(CsrCphr)
+print(CsrCphr)
 
 
 

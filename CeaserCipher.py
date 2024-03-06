@@ -18,15 +18,40 @@ characters = [
   #  return characters[charIndex]
 
 
-
-
-def csrCphr(message, letters): 
-    for char in enumerate(message): 
-        return (letters.index(char))
+def csrCphr(message, alphabet): 
+    for char in (message): 
+        search =alphabet.index(char)
+        if message
 
 msg = input("Enter message:")
 
+
+
+def filter_odd(numbers):
+
+   for number in range(numbers):
+
+       if(number%2!=0):
+
+           yield number 
+
+odd_numbers = filter_odd(20)
+
+print(list(odd_numbers))
+
+
+
+
+
+#x= xcute()
+
+print(xcute(msg, characters))
+
+#msg = input("Enter message:")
+
 print(csrCphr(msg, characters))
+
+
 
 #shift = input("Enter shift:")
 

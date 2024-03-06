@@ -19,16 +19,28 @@ characters = [
 
 
 
-msg = input("Enter message:")
-#shift = input("Enter a shift:")
 
-def CsrCphr(msg, letter): 
+def csrCphr(message, letters): 
+    for char in enumerate(message): 
+        return (letters.index(char))
+
+msg = input("Enter message:")
+
+print(csrCphr(msg, characters))
+
+#shift = input("Enter shift:")
+
     #for i in range (len(characters)):   
-    for char in msg: 
-        #letter= iter(msg) 
-        letter= characters.index(char)
-        
-        return letter
+
+
+#letter= iter(msg) 
+
+
+#def csrShift(shift)
+
+# Iterate over the string
+#for value,char in enumerate(msg):
+ #  print(char, end='')
 
         #nexChar= (next(letter))
         #alphabet= characters.index(letter)
@@ -37,7 +49,7 @@ def CsrCphr(msg, letter):
         #return(characters.index(msg[0:]))
         #characters.index = letter 
 
-print(CsrCphr)
+#print(char)
 
 
 
@@ -54,14 +66,6 @@ print(CsrCphr)
 
         #return genKey
 
-
-
-
-
-
-
-
-
 #def CsrLetter(letter, keyLetter):
 #   letterBin = encode(letter)
  #   encryptedLetter = XORonByte(letterBin, keyLetterBin)
@@ -76,19 +80,9 @@ print(CsrCphr)
         
     #    encryptedSentence += XORonLetter(sentence[i], genKey[i])
 
-
-
-
 #def shiftchar(characters):
     #for i in range(len(characters)):
 
     #return shift[+= ]
-
-
-
-
-
-
-
 
 #print("Your encrypted message is:", XORonSentence(msg, shift))

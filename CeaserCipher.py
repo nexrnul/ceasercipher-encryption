@@ -2,9 +2,9 @@ characters = [
     # lowercase characters
 'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z',
     # uppercase characters
-'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z',
+'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'
     # space and symbols
-    ' ',',','.','?','!','@','#','$','&','*','(',')'
+    #' ',',','.','?','!','@','#','$','&','*','(',')'
 ]
 
 
@@ -12,23 +12,29 @@ def csrCphr(message, alphabet):
     for char in (message): 
         search =alphabet.index(char)
         yield search
-    
 
 
-def csrShift(ushift):
+
+def csrShift(inpshift):
     indexes = (csrCphr(msg, characters))
-    for i in (indexes): 
-
-
+    for i in (indexes):
+        ushift = i + inpshift
+        charshift = characters.index(ushift)
+        print (charshift)
+    if charshift > 25: 
+         
+  
 
         
 
 msg = input("enter message:")
-shift = input ("enter shift:")
-print("Caeser Cypher encrypted message:" )
+shift = int(input("enter shift:"))
+
+
+
 #msgindex = csrCphr(msg, characters)
-#print(list(csrCphr(msg, characters)))
-print(csrShift(shift)
+print(list(csrCphr(msg, characters)))
+print(csrShift(shift))
 
 #print(csrCphr(msg, characters))
 

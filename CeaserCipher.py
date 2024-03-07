@@ -13,7 +13,8 @@ def csrCphr(message, alphabet):
         search =alphabet.index(char)
         yield search
 
-
+msg = input("enter message:")
+shift = int(input("enter shift:"))
 
 def csrShift(inpshift):
     indexes = (csrCphr(msg, characters))
@@ -22,13 +23,13 @@ def csrShift(inpshift):
         charshift = characters.index(ushift)
         print (charshift)
     if charshift > 25: 
+        yield
          
   
 
         
 
-msg = input("enter message:")
-shift = int(input("enter shift:"))
+
 
 
 

@@ -7,27 +7,28 @@ characters = [
     ' ',',','.','?','!','@','#','$','&','*','(',')'
 ]
 
-# use this method to encode an alphabet character into a binary string
-#def encode(character):
-    #charIndex = characters.index(character)
-    #return '{0:06b}'.format(charIndex)
-
-# use this method to decode a binary string into an alphabet character
-#def decode(binary):
- #   charIndex = int(binary, 2)
-  #  return characters[charIndex]
-
 
 def csrCphr(message, alphabet): 
     for char in (message): 
         search =alphabet.index(char)
         yield search
- 
+    
 
 
-msg = input("Enter message:")
+def csrShift(ushift):
+    indexes = (csrCphr(msg, characters))
+    for i in (indexes): 
+
+
+
+        
+
+msg = input("enter message:")
+shift = input ("enter shift:")
+print("Caeser Cypher encrypted message:" )
 #msgindex = csrCphr(msg, characters)
-print(list(csrCphr(msg, characters)))
+#print(list(csrCphr(msg, characters)))
+print(csrShift(shift)
 
 #print(csrCphr(msg, characters))
 

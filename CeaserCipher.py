@@ -21,36 +21,22 @@ characters = [
 def csrCphr(message, alphabet): 
     for char in (message): 
         search =alphabet.index(char)
-        if message
+        yield search
+ 
+
 
 msg = input("Enter message:")
+#msgindex = csrCphr(msg, characters)
+print(list(csrCphr(msg, characters)))
+
+#print(csrCphr(msg, characters))
 
 
-
-def filter_odd(numbers):
-
-   for number in range(numbers):
-
-       if(number%2!=0):
-
-           yield number 
-
-odd_numbers = filter_odd(20)
-
-print(list(odd_numbers))
-
-
-
-
-
-#x= xcute()
-
-print(xcute(msg, characters))
+       #if search == (len(message)-1):
+        #    + str(test_list[i]))
+         #   yield search
 
 #msg = input("Enter message:")
-
-print(csrCphr(msg, characters))
-
 
 
 #shift = input("Enter shift:")

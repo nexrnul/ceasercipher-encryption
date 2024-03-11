@@ -1,7 +1,6 @@
 import os
 characters = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z',]
 
-
 def csrCphr(message, alphabet): 
     for char in (message): 
         search =alphabet.index(char)
@@ -9,25 +8,24 @@ def csrCphr(message, alphabet):
 
 def csrShift(inpshift, alph):
     indexes = (list(csrCphr(msg, characters)))
-    shiftd_output= []
+    shiftd_output= []         
     for i in indexes:
         ushift = i + inpshift
-        charshift = alph[ushift]
+        currentindx = ushift % len(alph)
+        charshift = alph[currentindx]
         shiftd_output.append(charshift)
     return ''.join(shiftd_output)
-
 
 msg = input("enter message:")
 shift = int(input("enter shift:"))        
 outputt= csrShift(shift, characters)
+
 os.system('clear')
-
-print("your decoded msg is: " +msg)
-print("using the Caesar Cypher with shift [{}] your input was encrypted to: {}".format(shift, outputt))
-
-
+print('\033[97m' + 'your decoded msg is: ' '\033[1m' + '\033[94m' + msg)
+print('\033[0m'+'\033[97m'+'using the Caesar Cypher with shift['  '\033[1m'+'\033[94m'+'{}'.format(shift)+'\033[0m'+'\033[97m'+  '] your msg was encrypted to: ''\033[1m'+'\033[94m'+'{}'.format(outputt))
 
 #TRASHD CODE:
+
 
 
 
@@ -49,7 +47,8 @@ print("using the Caesar Cypher with shift [{}] your input was encrypted to: {}".
        #if search == (len(message)-1):
         #    + str(test_list[i]))
          #   yield search
-
+#print ('\033[1m' + '\033[94m' + 'test')
+#print ('\033[1m' + '\033[97m' + 'test')
 #msg = input("Enter message:")
 #shift = input("Enter shift:")
     #for i in range (len(characters)):   
